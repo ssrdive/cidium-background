@@ -4,8 +4,8 @@ const Database = require('./database')
 
 let financeScheduler = new schedule.RecurrenceRule()
 
-financeScheduler.second = 1
-financeScheduler.minute = 0
+financeScheduler.second = 0
+financeScheduler.minute = 5
 financeScheduler.hour = 0
 
 const updateContractStates = schedule.scheduleJob(financeScheduler, () => {
